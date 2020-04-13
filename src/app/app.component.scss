@@ -1,0 +1,39 @@
+#app {
+  width: 100%;
+}
+
+@media all and (min-width: 768px) {
+
+  #app {
+    margin: 0 auto;
+    max-width: 65rem;
+  }
+
+}
+
+.app-title {
+  margin: 0;
+  padding: 1rem 0;
+  color: white;
+  background: #ff33b3;
+  font-size: 2.5rem;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    margin: 0 0 0 .5rem;
+    border: 1px solid #bbb;
+    padding: 0 1rem;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+    background: #fff;
+    border-radius: .25rem;
+  }
+}
+

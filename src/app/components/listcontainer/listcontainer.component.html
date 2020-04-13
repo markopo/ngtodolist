@@ -1,0 +1,6 @@
+<ul class="app-list-container">
+  <app-listitem *ngFor="let todo of todos"
+                [todo]="todo"
+                (emitDelete)="emitDeleteTodo($event)"
+                (emitChecked)="emitCheckTodo($event)" ></app-listitem>
+</ul>

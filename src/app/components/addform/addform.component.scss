@@ -1,0 +1,62 @@
+#app-add-form {
+  position: fixed;
+  z-index: 100;
+  background: #fff;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+@media all and (min-width: 768px) {
+
+  #app-add-form {
+    margin: 0 auto;
+    max-width: 65rem;
+  }
+}
+
+.add-form-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  color: white;
+  background: #ff33b3;
+}
+
+#app-add-form .app-add-form__title {
+  margin: 0 .5rem;
+  padding: 0;
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+#app-add-form .add-form-close {
+  margin: 0 1rem;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+#app-add-form.hide {
+  display: none;
+}
+
+#app-add-form.show {
+  display: block;
+}
+
+#app-add-form .form-row {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#app-add-form .form-row label, button {
+  padding: .5rem 0;
+}

@@ -1,0 +1,15 @@
+<div id="app-add-form" *ngIf="isVisible" >
+  <div class="add-form-title-container">
+    <h3 class="app-add-form__title">Add Todo</h3>
+    <a class="add-form-close" (click)="clickClose()" >Close</a>
+  </div>
+  <form id="app-add-form-form" [formGroup]="form" >
+    <div class="form-row">
+      <label for="add-form-text">Name</label>
+      <input type="text" name="add-form-text" id="add-form-text" formControlName="name" >
+    </div>
+    <div class="form-row">
+      <button type="submit" [disabled]="!form.valid" (click)="clickSave()" >Save</button>
+    </div>
+  </form>
+</div>

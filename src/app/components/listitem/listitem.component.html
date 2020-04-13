@@ -1,0 +1,7 @@
+<li class="list-item" *ngIf="todo">
+  <strong class="list-item__title {{isCheckedCssClass}}">{{todo.name}}</strong>
+  <span class="list-item__linkscontainer">
+  <input  type="checkbox" class="list-item__donecheckbox" (click)="clickChecked($event)" >
+  <a class="list-item__deletelink" (click)="clickDelete($event)" >Delete</a>
+</span>
+</li>

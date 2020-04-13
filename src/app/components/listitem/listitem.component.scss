@@ -1,0 +1,40 @@
+.list-item {
+  margin: .2rem 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e3e5e7;
+
+  .list-item__title {
+    font-size: 1.5rem;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 70%;
+  }
+
+  .list-item__title.is-checked {
+    text-decoration: line-through;
+    color: #ccc;
+  }
+
+  .list-item__linkscontainer {
+    margin-left: .2rem;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    * {
+      margin: 0 .25rem;
+    }
+
+    a.list-item__deletelink:hover {
+      color: #00f;
+    }
+  }
+
+}
